@@ -2,14 +2,13 @@
 
 A browser-based computer vision application for gesture-based interactions and selfie capture.
 
-````markdown
-# Selfie Project
 
-A browser-based selfie capture app with gesture control, countdown timer, and a persistent gallery using localStorage.  
-Built with HTML, CSS, and JavaScript, powered by TensorFlow.js and MediaPipe for pose and hand gesture detection.
+Live Demo: https://cephas2bn.github.io/Selfie_Project/
+
+## Overview
+This project utilizes TensorFlow.js and MediaPipe to create an interactive selfie application. Users can take selfies using hand gestures, with a countdown timer and zoom functionality. The selfies are stored in the browser's local storage, allowing users to revisit their captured images.
 
 ## Features
-
 Live Webcam Feed – Works on desktop and mobile devices.
 Gesture-Controlled Capture – Raise your right hand or make a ✌️ peace sign to trigger a selfie.
 Countdown Overlay – 3-second countdown before capturing the image.
