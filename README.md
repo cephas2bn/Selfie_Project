@@ -10,30 +10,30 @@ Built with HTML, CSS, and JavaScript, powered by TensorFlow.js and MediaPipe for
 
 ## Features
 
-- **Live Webcam Feed** – Works on desktop and mobile devices.
-- **Gesture-Controlled Capture** – Raise your right hand or make a ✌️ peace sign to trigger a selfie.
-- **Countdown Overlay** – 3-second countdown before capturing the image.
-- **Zoom Control** – Adjust camera zoom in real-time.
-- **Download Button** – Save selfies locally as PNG files.
-- **Persistent Gallery** – All selfies are stored in the browser's localStorage.
-- **Responsive Design** – Mobile-friendly layout.
+Live Webcam Feed – Works on desktop and mobile devices.
+Gesture-Controlled Capture – Raise your right hand or make a ✌️ peace sign to trigger a selfie.
+Countdown Overlay – 3-second countdown before capturing the image.
+Zoom Control – Adjust camera zoom in real-time.
+Download Button – Save selfies locally as PNG files.
+Persistent Gallery – All selfies are stored in the browser's localStorage.
+Responsive Design – Mobile-friendly layout.
 
 ## Technologies Used
 
-- HTML5, CSS3, JavaScript (Vanilla)
-- [TensorFlow.js](https://www.tensorflow.org/js)
-- [MediaPipe Pose](https://developers.google.com/mediapipe/solutions/vision/pose)
-- [MediaPipe Hands](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker)
+HTML5, CSS3, JavaScript (Vanilla)
+[TensorFlow.js](https://www.tensorflow.org/js)
+[MediaPipe Pose](https://developers.google.com/mediapipe/solutions/vision/pose)
+[MediaPipe Hands](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker)
 
 ## Installation & Running Locally
 
-1. **Clone this repository**
+1. Clone this repository
    ```bash
    git clone https://github.com/cephas2bn/selfie-project.git
    cd selfie-project
 ````
 
-2. **Run a local server**
+2. Run a local server
    If you have Python installed:
 
    ```bash
@@ -47,13 +47,13 @@ Built with HTML, CSS, and JavaScript, powered by TensorFlow.js and MediaPipe for
    http://localhost:8000
    ```
 
-3. **Allow camera permissions** when prompted by the browser.
+3. Allow camera permissions when prompted by the browser.
 
 ## Deployment to GitHub Pages
 
 1. Push your code to a GitHub repository.
-2. In your repository, go to **Settings → Pages**.
-3. Under **Source**, select the branch (e.g., `main`) and root folder (`/`), then click **Save**.
+2. In your repository, go to Settings → Pages.
+3. Under Source, select the branch (e.g., `main`) and root folder (`/`), then click Save.
 4. Your app will be available at:
 
    ```
@@ -63,9 +63,9 @@ Built with HTML, CSS, and JavaScript, powered by TensorFlow.js and MediaPipe for
 ## How to Use
 
 1. Stand in front of your webcam.
-2. Raise your right hand **above your nose** or make a ✌️ peace sign.
+2. Raise your right hand above your nose or make a ✌️ peace sign.
 3. Wait for the 3-second countdown.
-4. Your selfie appears with a **Download** button.
+4. Your selfie appears with a Download button.
 5. Selfies are also saved in the gallery at the bottom of the page.
 
 ## License
