@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Video and canvas layering */
+.camera-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.info-text {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+video {
+    transform: scaleX(-1);
+}
+
+.controls {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.controls input[type="range"] {
+    width: 200px;
+    margin-left: 10px;
+}
+
+#countdown-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    z-index: 5;
+    display: none;
+    pointer-events: none;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .camera-wrapper {
+        width: 100%;
+    }
+
+    .gallery-img {
+        width: 80px;
+    }
+
+    .download-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
